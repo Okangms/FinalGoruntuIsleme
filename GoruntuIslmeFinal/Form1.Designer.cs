@@ -46,15 +46,15 @@
             konvolüsyüonMedianToolStripMenuItem = new ToolStripMenuItem();
             çiftEşiklemeToolStripMenuItem = new ToolStripMenuItem();
             kenarBulmaCannyToolStripMenuItem = new ToolStripMenuItem();
+            morfolojikİşlemlerToolStripMenuItem = new ToolStripMenuItem();
             filtrelerToolStripMenuItem = new ToolStripMenuItem();
             saltPaperToolStripMenuItem = new ToolStripMenuItem();
             motionToolStripMenuItem = new ToolStripMenuItem();
+            filtrelerToolStripMenuItem1 = new ToolStripMenuItem();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            filtrelerToolStripMenuItem1 = new ToolStripMenuItem();
-            morfolojikİşlemlerToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -134,7 +134,7 @@
             // histogramToolStripMenuItem1
             // 
             histogramToolStripMenuItem1.Name = "histogramToolStripMenuItem1";
-            histogramToolStripMenuItem1.Size = new Size(224, 26);
+            histogramToolStripMenuItem1.Size = new Size(159, 26);
             histogramToolStripMenuItem1.Text = "histogram";
             histogramToolStripMenuItem1.Click += histogramToolStripMenuItem1_Click;
             // 
@@ -148,7 +148,7 @@
             // çıkarmaToolStripMenuItem
             // 
             çıkarmaToolStripMenuItem.Name = "çıkarmaToolStripMenuItem";
-            çıkarmaToolStripMenuItem.Size = new Size(224, 26);
+            çıkarmaToolStripMenuItem.Size = new Size(144, 26);
             çıkarmaToolStripMenuItem.Text = "İşlemler";
             çıkarmaToolStripMenuItem.Click += çıkarmaToolStripMenuItem_Click;
             // 
@@ -187,6 +187,13 @@
             kenarBulmaCannyToolStripMenuItem.Text = "Kenar Bulma(Canny)";
             kenarBulmaCannyToolStripMenuItem.Click += kenarBulmaCannyToolStripMenuItem_Click;
             // 
+            // morfolojikİşlemlerToolStripMenuItem
+            // 
+            morfolojikİşlemlerToolStripMenuItem.Name = "morfolojikİşlemlerToolStripMenuItem";
+            morfolojikİşlemlerToolStripMenuItem.Size = new Size(240, 26);
+            morfolojikİşlemlerToolStripMenuItem.Text = "Morfolojik İşlemler";
+            morfolojikİşlemlerToolStripMenuItem.Click += morfolojikİşlemlerToolStripMenuItem_Click;
+            // 
             // filtrelerToolStripMenuItem
             // 
             filtrelerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { saltPaperToolStripMenuItem, motionToolStripMenuItem, filtrelerToolStripMenuItem1 });
@@ -207,6 +214,12 @@
             motionToolStripMenuItem.Size = new Size(269, 26);
             motionToolStripMenuItem.Text = "Motion";
             motionToolStripMenuItem.Click += motionToolStripMenuItem_Click;
+            // 
+            // filtrelerToolStripMenuItem1
+            // 
+            filtrelerToolStripMenuItem1.Name = "filtrelerToolStripMenuItem1";
+            filtrelerToolStripMenuItem1.Size = new Size(269, 26);
+            filtrelerToolStripMenuItem1.Text = "Filtreler";
             // 
             // label1
             // 
@@ -244,19 +257,6 @@
             label4.TabIndex = 4;
             label4.Text = "Grup No:5        Proje NO:2";
             // 
-            // filtrelerToolStripMenuItem1
-            // 
-            filtrelerToolStripMenuItem1.Name = "filtrelerToolStripMenuItem1";
-            filtrelerToolStripMenuItem1.Size = new Size(269, 26);
-            filtrelerToolStripMenuItem1.Text = "Filtreler";
-            // 
-            // morfolojikİşlemlerToolStripMenuItem
-            // 
-            morfolojikİşlemlerToolStripMenuItem.Name = "morfolojikİşlemlerToolStripMenuItem";
-            morfolojikİşlemlerToolStripMenuItem.Size = new Size(240, 26);
-            morfolojikİşlemlerToolStripMenuItem.Text = "Morfolojik İşlemler";
-            morfolojikİşlemlerToolStripMenuItem.Click += morfolojikİşlemlerToolStripMenuItem_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -270,6 +270,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);

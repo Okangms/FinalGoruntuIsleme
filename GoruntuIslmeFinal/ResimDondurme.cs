@@ -87,5 +87,10 @@ namespace GoruntuIslmeFinal
                 pictureBox2.Image = CikisResmi;
             }
         }
+
+        private void ResimDondurme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

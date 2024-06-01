@@ -98,5 +98,10 @@ namespace GoruntuIslmeFinal
             Morfolojik_islemler morfolojik_Ýslemler = new Morfolojik_islemler();
             morfolojik_Ýslemler.Show();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

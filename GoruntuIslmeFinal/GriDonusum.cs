@@ -49,6 +49,11 @@ namespace GoruntuIslmeFinal
             }
             pictureBox2.Image = CikisResmi;
         }
+
+        private void GriDonusum_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-    
+
 }

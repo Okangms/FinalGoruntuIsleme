@@ -48,5 +48,10 @@ namespace GoruntuIslmeFinal
             }
             pictureBox2.Image = CikisResmi;
         }
+
+        private void BinaryDonusum_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

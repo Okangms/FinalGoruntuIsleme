@@ -109,6 +109,7 @@
             Controls.Add(pictureBox1);
             Name = "BinaryDonusum";
             Text = "BinaryDonusum";
+            Load += BinaryDonusum_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
