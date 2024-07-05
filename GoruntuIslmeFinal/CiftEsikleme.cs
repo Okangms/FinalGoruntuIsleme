@@ -25,14 +25,11 @@ namespace GoruntuIslmeFinal
 
             GirisResmi = new Bitmap(pictureBox1.ImageLocation);
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             int lowerThreshold = int.Parse(textBox1.Text);
             int upperThreshold = int.Parse(textBox2.Text);
-
             Bitmap resultImage = CiftEsikleme.ApplyDoubleThreshold(GirisResmi, lowerThreshold, upperThreshold);
-
             pictureBox2.Image = (Image)resultImage;
         }
 
